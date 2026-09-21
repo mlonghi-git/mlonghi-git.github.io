@@ -45,6 +45,7 @@ h1 em, h2 em { color: var(--teal); font-style: normal; }
 .hero-console { background: var(--teal-dark); color: var(--paper); min-height: 390px; padding: 1.4rem; position: relative; transform: rotate(2deg); }
 .console-top { color: var(--yellow); display: flex; justify-content: space-between; }
 .console-live { color: var(--paper); font-size: .62rem; }
+.profile-photo { aspect-ratio: 4 / 3; display: block; filter: grayscale(100%); margin-top: 1.5rem; object-fit: cover; object-position: center 28%; width: 100%; }
 .console-monogram { border-bottom: 1px solid rgba(244, 241, 233, .3); color: var(--yellow); font-size: clamp(5rem, 10vw, 8rem); font-weight: 800; letter-spacing: -.13em; line-height: 1; margin: 3.8rem 0 2rem; padding-bottom: 1rem; }
 .console-details { display: grid; gap: .1rem; grid-template-columns: 1fr 1.7fr; }
 .console-details p { color: rgba(244, 241, 233, .6); font-family: var(--mono); font-size: .58rem; margin: .65rem 0 0; }
@@ -151,6 +152,7 @@ h2 { font-size: clamp(2.5rem, 5vw, 5rem); font-weight: 700; margin-bottom: 2.3re
   h2 { font-size: 25pt; margin-bottom: 8mm; }
   .hero-lead { font-size: 11pt; }
   .hero-console { min-height: 0; padding: 6mm; transform: none; }
+  .profile-photo { margin-top: 4mm; }
   .console-monogram { font-size: 54pt; margin: 15mm 0 8mm; }
   .proof-strip { padding: 4mm 0; }
   .content-section { break-inside: avoid; display: grid; gap: 12mm; grid-template-columns: 28mm 1fr; padding: 12mm 0; }
