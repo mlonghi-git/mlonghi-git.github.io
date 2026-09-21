@@ -123,8 +123,11 @@ h2 { font-size: clamp(2.5rem, 5vw, 5rem); font-weight: 700; margin-bottom: 2.3re
 .contact-kicker { color: var(--coral); }
 .contact-content { padding: 4rem 0 7rem; }
 .contact-content h2 { font-size: clamp(3.4rem, 8vw, 8rem); margin-bottom: 3rem; }
+.contact-links { align-items: flex-start; display: flex; flex-direction: column; gap: .9rem; }
 .email-link { border-bottom: 2px solid var(--teal); color: var(--teal-dark); font-family: var(--mono); font-size: clamp(1rem, 2.2vw, 1.7rem); padding-bottom: .5rem; }
 .email-link span { color: var(--coral); }
+.phone-link { border-bottom: 1px solid var(--line); color: var(--muted); font-family: var(--mono); font-size: clamp(.85rem, 1.3vw, 1rem); letter-spacing: .08em; padding-bottom: .25rem; }
+.phone-link:hover { color: var(--teal); }
 .contact-footer, .site-footer { color: var(--muted); display: flex; font-family: var(--mono); font-size: .62rem; justify-content: space-between; text-transform: uppercase; }
 .social-links { display: flex; gap: 1.5rem; }
 .social-links a:hover { color: var(--teal); }
