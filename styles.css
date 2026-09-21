@@ -42,10 +42,10 @@ h1 em, h2 em { color: var(--teal); font-style: normal; }
 .button-primary:hover { background: var(--teal); transform: translateY(-2px); }
 .text-link { border-bottom: 1px solid var(--ink); padding-bottom: .45rem; }
 .text-link span { color: var(--coral); font-size: 1rem; margin-left: .3rem; }
-.hero-console { background: var(--teal-dark); color: var(--paper); min-height: 390px; padding: 1.4rem; position: relative; transform: rotate(2deg); }
+.hero-console { background: var(--teal-dark); color: var(--paper); min-height: 350px; padding: 1.4rem; position: relative; transform: rotate(2deg); }
 .console-top { color: var(--yellow); display: flex; justify-content: space-between; }
 .console-live { color: var(--paper); font-size: .62rem; }
-.profile-photo { aspect-ratio: 4 / 3; display: block; filter: grayscale(100%); margin-top: 1.5rem; object-fit: cover; object-position: center 28%; width: 100%; }
+.profile-photo { aspect-ratio: 1; border: 5px solid rgba(244, 241, 233, .18); display: block; filter: grayscale(100%); height: auto; margin: 1.5rem auto 1.2rem; max-width: 220px; object-fit: cover; object-position: center 28%; width: 72%; }
 .console-monogram { border-bottom: 1px solid rgba(244, 241, 233, .3); color: var(--yellow); font-size: clamp(5rem, 10vw, 8rem); font-weight: 800; letter-spacing: -.13em; line-height: 1; margin: 3.8rem 0 2rem; padding-bottom: 1rem; }
 .console-details { display: grid; gap: .1rem; grid-template-columns: 1fr 1.7fr; }
 .console-details p { color: rgba(244, 241, 233, .6); font-family: var(--mono); font-size: .58rem; margin: .65rem 0 0; }
