@@ -160,12 +160,35 @@
         display: flex;
         justify-content: space-between;
       }
+      .print-footer {
+        display: none;
+      }
       @media print {
         body {
           background: #fff;
         }
         .page {
           margin: 0;
+        }
+        .columns {
+          break-before: page;
+          padding-top: 12mm;
+        }
+        .footer {
+          display: none;
+        }
+        .print-footer {
+          bottom: 4mm;
+          color: #52666a;
+          display: flex;
+          font-size: 7.5pt;
+          justify-content: space-between;
+          left: 16mm;
+          position: fixed;
+          right: 16mm;
+        }
+        .print-footer::after {
+          content: "Pagina " counter(page);
         }
         a {
           color: inherit;
@@ -215,32 +238,31 @@
         <h2>Competenze chiave</h2>
         <div class="skills">
           <div class="skill">
-            <b>SAP & Cloud</b
+            <b>Integration Architecture</b
             ><span
-              >SAP BTP, Integration Suite, Cloud Integration, API Management,
-              Integration Advisor, Cloud Connector, S/4HANA, ECC,
-              SuccessFactors, SAP Sales and Service Cloud (C4C), SAP CPQ</span
+              >Architetture SAP BTP scalabili, sicure e manutenibili; pattern,
+              governance e connessioni tra cloud e sistemi on-premise</span
             >
           </div>
           <div class="skill">
-            <b>Enterprise Integration</b
+            <b>API, B2B &amp; Process Integration</b
             ><span
-              >REST, OData, SOAP, GraphQL, RFC, JDBC, IDoc, EDIFACT, AS2,
-              B2B/B2G</span
+              >Integrazioni API-first, B2B/B2G, EDI e processi enterprise con
+              REST, OData, SOAP, IDoc, AS2 ed EDIFACT</span
             >
           </div>
           <div class="skill">
-            <b>Development</b
+            <b>Engineering &amp; Technical Delivery</b
             ><span
-              >Groovy, XSLT, ABAP, mapping avanzati, scripting, data
-              transformation, API orchestration</span
+              >iFlow, routing, mapping e trasformazioni con Groovy, XSLT e
+              ABAP; troubleshooting, qualità del codice e delivery</span
             >
           </div>
           <div class="skill">
-            <b>Security & Platforms</b
+            <b>Team Enablement &amp; Internal Tooling</b
             ><span
-              >OAuth 2.0, SAML, keystore, truststore, SAP PO/PI, Dell Boomi,
-              webMethods.io</span
+              >Template, linee guida e strumenti per documentare tenant CPI e
+              confrontare deploy e versioni tra ambienti</span
             >
           </div>
         </div>
@@ -355,5 +377,6 @@
         ><span>CV aggiornato settembre 2026</span>
       </footer>
     </main>
+    <div class="print-footer"><span>Mirko Longhi · SAP Integration Architect</span></div>
   </body>
 </html>

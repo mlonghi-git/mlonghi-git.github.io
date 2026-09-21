@@ -95,6 +95,7 @@ h2 { font-size: clamp(2.5rem, 5vw, 5rem); font-weight: 700; margin-bottom: 2.3re
 .skill-index { color: var(--coral); font-family: var(--mono); font-size: .68rem; }
 .skill-card h3 { font-size: 1rem; margin: 1.8rem 0 .7rem; }
 .skill-card p { color: var(--muted); font-size: .87rem; margin: 0; }
+.ecosystem-note { border-top: 1px solid var(--line); color: var(--muted); font-family: var(--mono); font-size: .72rem; margin: 2.4rem 0 0; padding-top: 1rem; }
 .timeline-item { border-top: 1px solid var(--line); padding: 1.4rem 0 3rem; }
 .timeline-item:last-child { padding-bottom: 0; }
 .timeline-meta { display: flex; justify-content: space-between; }
